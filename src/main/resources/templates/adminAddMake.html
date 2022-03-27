@@ -1,0 +1,169 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<title>Using Bootstrap | Analyze 12</title>
+
+</head>
+
+<body>
+
+  
+
+<!-- Bootstrap Navigation bar -->
+
+<nav class="navbar navbar-expand-sm navbar-light">
+
+<a class="navbar-brand" href="/">
+    <div class="logo-image">
+            <img src="image2.png" class="img-fluid">
+    </div>
+</a>
+
+<!-- Hamburger menu -->
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+  
+
+<!-- Nav links -->
+
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/featuredVehicles">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/newcar">New Inventory</a>
+
+</li>
+<!----CLASS ADDED---->
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/usedcar">Used Inventory</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/dealerSpecials">Specials</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/contactMessager">Contact</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/salePage">Sales</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/adminPage">Admin</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- Quick Search Filter Bar -->
+
+<div>
+
+    <h2>Makes</h2>
+
+    <div class="row15">
+        <div class="column" style="background-color:#FFFFFF;">
+            <div class="form-group">
+                <label>New Make</label>
+                <input class="col-8 form-control" type="text" id="storeName" name="name" placeholder="Enter new Make"/>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Main Content Area -->
+<div th:if="${not #lists.isEmpty(adminManageUsers)}">
+        <table class="table table-striped">
+            <tr>
+                <th>Make</th>
+                <th>Date Added</th>
+                <th>User</th>
+            </tr>
+            <tr th:each="r : ${adminManageUsers}">
+                <td th:text="${r.firstName}"></td>
+                <td th:text="${r.lastName}"></td>
+                <td th:text="${r.email}"></td>
+                <td th:text="${r.role}"></td>
+            </tr>
+        </table>
+</div>
+
+    
+
+
+
+
+<!-- Footer -->
+<!--removed jumbotron-fluid text-center-->
+<footer class=" bg-primary p-3">
+
+<div class="container text-white">
+
+<p>&copy; Copyright 2022. All Rights Reserved.</p>
+
+<p>Webpage Created by: Aabharan Koppal </p>
+
+</div>
+
+  
+
+</footer>
+
+  
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

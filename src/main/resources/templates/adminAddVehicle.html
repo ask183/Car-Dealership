@@ -1,0 +1,246 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<!-- Required meta tags -->
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<title>Using Bootstrap | Analyze 12</title>
+
+</head>
+
+<body>
+
+  
+
+<!-- Bootstrap Navigation bar -->
+
+<nav class="navbar navbar-expand-sm navbar-light">
+
+<a class="navbar-brand" href="/">
+    <div class="logo-image">
+            <img src="image2.png" class="img-fluid">
+    </div>
+</a>
+
+<!-- Hamburger menu -->
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+  
+
+<!-- Nav links -->
+
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+<ul class="navbar-nav">
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/featuredVehicles">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/newcar">New Inventory</a>
+
+</li>
+<!----CLASS ADDED---->
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/usedcar">Used Inventory</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/dealerSpecials">Specials</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/contactMessager">Contact</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/salePage">Sales</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link text-primary" href="/adminPage">Admin</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- Main Content Area -->
+<div class="container">
+
+    <div class="row19">
+        <h2>Add Vehicle</h2>
+    </div>
+
+    <div class="col-4">
+        <form action="/adminAddANewVehicle" method="POST" class="form">
+            <div class="form-group">
+                    <label class="col-4" for="storeName">Make</label>
+                    <select>
+                        <option value="" disabled selected>Audi</option>
+                        <option value="Audi">Audi</option>
+                    </select>
+                    
+                    <div>
+                    <label class="col-4" for="storeName">Model</label>
+                    <select>
+                        <option value="" disabled selected>A4</option>
+                        <option value="A4">A4</option>
+                    </select>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                    <label class="col-4" for="storeName">Type</label>
+                    <select>
+                        <option value="" disabled selected>New</option>
+                        <option value="New">New</option>
+                        <option value="Used">Used</option>
+                    </select>
+                    
+                    <div>
+                    <label class="col-4" for="storeName">Body Style</label>
+                    <select>
+                        <option value="" disabled selected>Car</option>
+                        <option value="Car">Car</option>
+                        <option value="SUV">SUV</option> 
+                        <option value="Truck">Truck</option>
+                        <option value="Van">Van</option>
+                    </select>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-4" for="storeManager">Year</label>
+                <input class="col-8 form-control" type="text" id="year" name="year"/>
+                <span>
+                    <label class="col-4" for="storeName">Transmission</label>
+                    <select>
+                        <option value="" disabled selected>Automatic</option>
+                        <option value="Automatic">Automatic</option>
+                        <option value="Manual">Manual</option>
+                    </select>
+                </span>
+            </div>
+            
+            <div class="form-group">
+                    <label class="col-4" for="storeName">Color</label>
+                    <select>
+                        <option value="" disabled selected>Black</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Green">Green</option> 
+                        <option value="Red">Red</option>
+                        <option value="Silver">Silver</option>
+                    </select>
+                    
+                    <div>
+                    <label class="col-4" for="storeName">Interior</label>
+                    <select>
+                        <option value="" disabled selected>Black</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Green">Green</option> 
+                        <option value="Red">Red</option>
+                        <option value="Silver">Silver</option>
+                    </select>
+                    </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-4" for="storeManager">Mileage</label>
+                <input class="col-8 form-control" type="text" id="mileage" name="mileage"/>
+                <span>
+                    <label class="col-4" for="storeManager">VIN #</label>
+                    <input class="col-8 form-control" type="text" id="vinnum" name="vinnum"/>
+                </span>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-4" for="storeManager">MSRP</label>
+                <input class="col-8 form-control" type="text" id="msrp" name="msrp"/>
+                <span>
+                    <label class="col-4" for="storeManager">Sale Price</label>
+                    <input class="col-8 form-control" type="text" id="saleprice" name="saleprice"/>
+                </span>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-4" for="storeManager">Description</label>
+                <input class="col-8 form-control" type="text" id="description" name="description"/>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-4" for="storeManager">Picture</label>
+                <input class="col-8 form-control" type="text" id="picture" name="picture"/>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>            
+            
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<!--removed jumbotron-fluid text-center-->
+<footer class=" bg-primary p-3">
+
+<div class="container text-white">
+
+<p>&copy; Copyright 2022. All Rights Reserved.</p>
+
+<p>Webpage Created by: Aabharan Koppal </p>
+
+</div>
+
+  
+
+</footer>
+
+  
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 20, 2022, 1:29:47 PM
+    Author     : abekoppal
+*/
+.bg-light-blue{
+    background-color: #cce6ff;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.container1{
+    text-align:center;
+}
+
+.container { 
+    display: inline-block;
+}
+
+.row{
+    
+}
+
+.container5{/*
+    display: flex;
+    width: 75%;*/
+    
+}
+
+.container6{
+    border-style: dashed;
+}
+
+.card-title{
+   /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;*/
+}
+
+.bg-primary p-3{
+  
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row15:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row15{
+    border-style: solid;
+}
+
+.row16{
+    display: flex;
+    border-style: solid;
+}
+
+.navbar{
+    border-style: solid;
+}
+
+.col-4{
+    display: inline-block;
+}
+
+.container25{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Year-Make-Model Year-Make-Model Year-Make-Model Year-Make-Model"
+        "Image Body-Trans-Color Int-Mile-Vin SP-MSRP-Button"
+        "Image Body-Trans-Color Int-Mile-Vin SP-MSRP-Button"
+        "Image Body-Trans-Color Int-Mile-Vin SP-MSRP-Button";
+}
+
+.Year-Make-Model {
+    grid-area: Year-Make-Model;
+}
+
+.Image {
+    grid-area: Image;
+}
+
+.Body-Trans-Color {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "BodyStyle BodyStyle BodyStyle"
+        "Transmission Transmission Transmission"
+        "Color Color Color";
+    grid-area: Body-Trans-Color;
+}
+
+.BodyStyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    grid-area: BodyStyle;
+}
+
+.Transmission {
+    grid-area: Transmission;
+}
+
+.Color {
+    grid-area: Color;
+}
+
+.Int-Mile-Vin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Interior Interior Interior"
+        "Mileage Mileage Mileage"
+        "VIN VIN VIN";
+    grid-area: Int-Mile-Vin;
+}
+
+.Interior {
+    grid-area: Interior;
+}
+
+.Mileage {
+    grid-area: Mileage;
+}
+
+.VIN {
+    grid-area: VIN;
+}
+
+.SP-MSRP-Button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Sale-Price Sale-Price Sale-Price"
+        "msrp msrp msrp"
+        "Detail-Button Detail-Button Detail-Button";
+    grid-area: SP-MSRP-Button;
+}
+
+.Sale-Price {
+    grid-area: Sale-Price;
+}
+
+.msrp {
+    grid-area: msrp;
+}
+
+.Detail-Button {
+    grid-area: Detail-Button;
+}
